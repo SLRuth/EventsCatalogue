@@ -1,0 +1,8 @@
+{
+    "name": "shocklogic/event-catalogue",
+    "description": "Webpage to manage event information, speakers, fees and programme",
+    "type": "project",
+    "require": {
+        "paulthewalton/acf-pro-stubs": "5.8.9.1"
+    }
+}
