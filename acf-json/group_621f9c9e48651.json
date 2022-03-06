@@ -1,0 +1,56 @@
+{
+    "key": "group_621f9c9e48651",
+    "title": "Remote Host URL",
+    "fields": [
+        {
+            "key": "field_621f9cfc56b14",
+            "label": "URL",
+            "name": "host",
+            "type": "url",
+            "instructions": "The URL that identifies the endpoint, e.g https:\/\/www.my.resource.net\/my\/resource",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "http:\/\/www.google.com\/search"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "remote_host"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "permalink",
+        "the_content",
+        "excerpt",
+        "discussion",
+        "comments",
+        "revisions",
+        "slug",
+        "author",
+        "format",
+        "page_attributes",
+        "featured_image",
+        "categories",
+        "tags",
+        "send-trackbacks"
+    ],
+    "active": true,
+    "description": "The remote host where events will be exported and imported from",
+    "show_in_rest": 0,
+    "modified": 1646239662
+}
