@@ -1,14 +1,66 @@
 {
     "key": "group_621f9fee58eb1",
-    "title": "Remote Host Encoding",
+    "title": "Remote Host Configuration",
     "fields": [
+        {
+            "key": "field_62265c128dd1d",
+            "label": "Entities to export",
+            "name": "entities_to_export",
+            "type": "checkbox",
+            "instructions": "Entities to export to the remote host",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "event": "Event",
+                "fee": "Fee",
+                "speaker": "Speaker",
+                "session": "Session"
+            },
+            "allow_custom": 0,
+            "default_value": [],
+            "layout": "vertical",
+            "toggle": 0,
+            "return_format": "value",
+            "save_custom": 0
+        },
+        {
+            "key": "field_6226631de7123",
+            "label": "Entities to import",
+            "name": "entities_to_import",
+            "type": "checkbox",
+            "instructions": "Entities to import from the remote host",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "event": "Event",
+                "fee": "Fee",
+                "speaker": "Speaker",
+                "session": "Session"
+            },
+            "allow_custom": 0,
+            "default_value": [],
+            "layout": "vertical",
+            "toggle": 0,
+            "return_format": "value",
+            "save_custom": 0
+        },
         {
             "key": "field_621f9ff4a0e8d",
             "label": "Fields Mapping",
             "name": "fields_mapping",
             "type": "repeater",
-            "instructions": "",
-            "required": 0,
+            "instructions": "Table of mappings of the field names of the entities to the field names stored in the remote host. Used in both export and import operations.",
+            "required": 1,
             "conditional_logic": 0,
             "wrapper": {
                 "width": "",
@@ -27,7 +79,7 @@
                     "name": "entity_type",
                     "type": "select",
                     "instructions": "",
-                    "required": 1,
+                    "required": true,
                     "conditional_logic": 0,
                     "wrapper": {
                         "width": "",
@@ -35,16 +87,15 @@
                         "id": ""
                     },
                     "choices": {
-                        "Event": "Event",
-                        "Fee": "Fee",
-                        "Speaker": "Speaker",
-                        "Session": "Session"
+                        "group_622078e41348f": "Event ",
+                        "group_622084350e559": "Fee ",
+                        "group_6220818ed7a8f": "Speaker "
                     },
-                    "default_value": "Event",
+                    "default_value": false,
                     "allow_null": 0,
                     "multiple": 0,
                     "ui": 0,
-                    "return_format": "value",
+                    "return_format": "label",
                     "ajax": 0,
                     "placeholder": ""
                 },
@@ -52,7 +103,7 @@
                     "key": "field_621fa088a0e8f",
                     "label": "Local Field",
                     "name": "local_field",
-                    "type": "text",
+                    "type": "select",
                     "instructions": "",
                     "required": 1,
                     "conditional_logic": 0,
@@ -61,11 +112,21 @@
                         "class": "",
                         "id": ""
                     },
-                    "default_value": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "maxlength": ""
+                    "choices": {
+                        "date": "Date",
+                        "image": "Image",
+                        "type": "Type",
+                        "title": "Title",
+                        "description": "Description",
+                        "register_link": "Register Link"
+                    },
+                    "default_value": false,
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 0,
+                    "return_format": "value",
+                    "ajax": 0,
+                    "placeholder": ""
                 },
                 {
                     "key": "field_621fa0a8e92ef",
@@ -93,7 +154,7 @@
             "label": "Decoding Overrides",
             "name": "decoding_overrides",
             "type": "repeater",
-            "instructions": "",
+            "instructions": "Optional table of mappings of the fields stored on the remote host to the fields of the entities, used specifically on import. If an entity's field does not appear here, the mappings set in the Fields Mapping will be used when importing.",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -113,7 +174,7 @@
                     "name": "entity_type",
                     "type": "select",
                     "instructions": "",
-                    "required": 0,
+                    "required": true,
                     "conditional_logic": 0,
                     "wrapper": {
                         "width": "",
@@ -121,10 +182,9 @@
                         "id": ""
                     },
                     "choices": {
-                        "event": "Event",
-                        "fee": "Fee",
-                        "speaker": "Speaker",
-                        "session": "Session"
+                        "group_622078e41348f": "Event ",
+                        "group_622084350e559": "Fee ",
+                        "group_6220818ed7a8f": "Speaker "
                     },
                     "default_value": false,
                     "allow_null": 0,
@@ -151,7 +211,15 @@
                     "placeholder": "",
                     "prepend": "",
                     "append": "",
-                    "maxlength": ""
+                    "maxlength": "",
+                    "choices": {
+                        "date": "Date",
+                        "image": "Image",
+                        "type": "Type",
+                        "title": "Title",
+                        "description": "Description",
+                        "register_link": "Register Link"
+                    }
                 },
                 {
                     "key": "field_621fa5ecf3b43",
@@ -189,9 +257,24 @@
     "style": "default",
     "label_placement": "top",
     "instruction_placement": "label",
-    "hide_on_screen": "",
+    "hide_on_screen": [
+        "permalink",
+        "the_content",
+        "excerpt",
+        "discussion",
+        "comments",
+        "revisions",
+        "slug",
+        "author",
+        "format",
+        "page_attributes",
+        "featured_image",
+        "categories",
+        "tags",
+        "send-trackbacks"
+    ],
     "active": true,
-    "description": "",
-    "show_in_rest": 0,
-    "modified": 1646241266
+    "description": "Configures which entities to export \/ import and the fields to be exported \/ imported",
+    "show_in_rest": 1,
+    "modified": 1646859950
 }

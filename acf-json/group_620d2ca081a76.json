@@ -111,7 +111,7 @@
             {
                 "param": "post_type",
                 "operator": "==",
-                "value": "event"
+                "value": "post"
             }
         ]
     ],
@@ -139,5 +139,5 @@
     "active": true,
     "description": "The events that are scheduled",
     "show_in_rest": 0,
-    "modified": 1646238748
+    "modified": 1646682586
 }

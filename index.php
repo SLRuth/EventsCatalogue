@@ -1,5 +1,7 @@
 <?php
 
+// This is a comment
+
 get_header();
 
 if(get_field('isolate_webpage')){
