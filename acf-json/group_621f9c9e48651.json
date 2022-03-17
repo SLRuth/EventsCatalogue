@@ -1,13 +1,39 @@
 {
     "key": "group_621f9c9e48651",
-    "title": "Remote Host URL",
+    "title": "Remote Host Endpoint",
     "fields": [
         {
-            "key": "field_621f9cfc56b14",
-            "label": "URL",
+            "key": "field_622fe83307924",
+            "label": "Type",
+            "name": "type",
+            "type": "select",
+            "instructions": "Selects the type of the Remote Host Endpoint, e.g. A MySQL Database, a REST API Endpoint, etc.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "mysql": "MySQL",
+                "csv": "CSV File",
+                "http": "HTTP"
+            },
+            "default_value": false,
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_622ff472db442",
+            "label": "Hostname",
             "name": "host",
-            "type": "url",
-            "instructions": "The URL that identifies the endpoint, e.g https:\/\/www.my.resource.net\/my\/resource",
+            "type": "text",
+            "instructions": "The Remote Host name. e.g www.google.com, 192.168.0.1.",
             "required": 1,
             "conditional_logic": 0,
             "wrapper": {
@@ -16,7 +42,103 @@
                 "id": ""
             },
             "default_value": "",
-            "placeholder": "http:\/\/www.google.com\/search"
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_622ff356009b2",
+            "label": "Storage Name",
+            "name": "storage_name",
+            "type": "text",
+            "instructions": "Name representing where the entities will be stored, e.g. For an HTTP Remote Host, it represents the endpoint slug, For a Database Remote Host, it represents the database name",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_622fe88607925",
+            "label": "Authentication",
+            "name": "authentication",
+            "type": "group",
+            "instructions": "The authentication credentials used for accessing the Remote Host Endpoint, e.g. A Username and Password, or an API Token",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_622fee3407926",
+                    "label": "Username",
+                    "name": "username",
+                    "type": "text",
+                    "instructions": "The username to use when authenticating with the Endpoint",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_622fee4d07927",
+                    "label": "Password",
+                    "name": "password",
+                    "type": "text",
+                    "instructions": "The password to use when authenticating with the endpoint. Leave blank when no password is needed",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_622fee7507928",
+                    "label": "Token",
+                    "name": "token",
+                    "type": "text",
+                    "instructions": "The Token to use when authenticating with the Endpoint. Leave Username and Password empty when setting this option.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                }
+            ]
         }
     ],
     "location": [
@@ -52,5 +174,5 @@
     "active": true,
     "description": "The remote host where events will be exported and imported from",
     "show_in_rest": 1,
-    "modified": 1646682622
+    "modified": 1647362712
 }
