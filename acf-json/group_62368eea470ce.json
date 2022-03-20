@@ -1,9 +1,9 @@
 {
-    "key": "group_622084350e559",
-    "title": "Fee Specs",
+    "key": "group_62368eea470ce",
+    "title": "Programme Specs",
     "fields": [
         {
-            "key": "field_622084422ec21",
+            "key": "field_62368ef2ad0da",
             "label": "Specs",
             "name": "specs",
             "type": "group",
@@ -18,7 +18,7 @@
             "layout": "block",
             "sub_fields": [
                 {
-                    "key": "field_623694dad3556",
+                    "key": "field_62369018ad0e0",
                     "label": "Event",
                     "name": "event",
                     "type": "post_object",
@@ -40,9 +40,9 @@
                     "ui": 1
                 },
                 {
-                    "key": "field_623694f6d3557",
-                    "label": "Fees",
-                    "name": "fees",
+                    "key": "field_62368f6fad0dd",
+                    "label": "Agenda",
+                    "name": "agenda",
                     "type": "repeater",
                     "instructions": "",
                     "required": 0,
@@ -59,7 +59,41 @@
                     "button_label": "",
                     "sub_fields": [
                         {
-                            "key": "field_622084592ec22",
+                            "key": "field_62368f02ad0db",
+                            "label": "Start Time",
+                            "name": "start_time",
+                            "type": "date_time_picker",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "display_format": "F j, Y g:i a",
+                            "return_format": "F j, Y g:i a",
+                            "first_day": 1
+                        },
+                        {
+                            "key": "field_62368f5aad0dc",
+                            "label": "End Time",
+                            "name": "end_time",
+                            "type": "date_time_picker",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "display_format": "F j, Y g:i a",
+                            "return_format": "F j, Y g:i a",
+                            "first_day": 1
+                        },
+                        {
+                            "key": "field_62368fd3ad0de",
                             "label": "Title",
                             "name": "title",
                             "type": "text",
@@ -78,10 +112,10 @@
                             "maxlength": ""
                         },
                         {
-                            "key": "field_6220845f2ec23",
-                            "label": "Cost",
-                            "name": "cost",
-                            "type": "text",
+                            "key": "field_62368feaad0df",
+                            "label": "Description",
+                            "name": "description",
+                            "type": "textarea",
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": 0,
@@ -92,24 +126,9 @@
                             },
                             "default_value": "",
                             "placeholder": "",
-                            "prepend": "",
-                            "append": "",
-                            "maxlength": ""
-                        },
-                        {
-                            "key": "field_622084932ec24",
-                            "label": "Register Link",
-                            "name": "register_link",
-                            "type": "link",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "return_format": "array"
+                            "maxlength": "",
+                            "rows": "",
+                            "new_lines": ""
                         }
                     ]
                 }
@@ -121,7 +140,7 @@
             {
                 "param": "post_type",
                 "operator": "==",
-                "value": "fee"
+                "value": "programme"
             }
         ]
     ],
@@ -133,6 +152,6 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "show_in_rest": 1,
-    "modified": 1647781895
+    "show_in_rest": 0,
+    "modified": 1647743121
 }
