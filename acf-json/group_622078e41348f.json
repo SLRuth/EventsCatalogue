@@ -47,7 +47,7 @@
                         "class": "",
                         "id": ""
                     },
-                    "return_format": "array",
+                    "return_format": "url",
                     "preview_size": "medium",
                     "library": "all",
                     "min_width": "",
@@ -57,6 +57,22 @@
                     "max_height": "",
                     "max_size": "",
                     "mime_types": ""
+                },
+                {
+                    "key": "field_6237512cc60b6",
+                    "label": "Image URL",
+                    "name": "image_url",
+                    "type": "url",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": ""
                 },
                 {
                     "key": "field_62207ab215137",
@@ -107,6 +123,25 @@
                     "key": "field_62207b1615139",
                     "label": "Description",
                     "name": "description",
+                    "type": "wysiwyg",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "tabs": "all",
+                    "toolbar": "full",
+                    "media_upload": 1,
+                    "delay": 0
+                },
+                {
+                    "key": "field_6237438cfa574",
+                    "label": "Short Description",
+                    "name": "short_description",
                     "type": "textarea",
                     "instructions": "",
                     "required": 0,
@@ -118,7 +153,7 @@
                     },
                     "default_value": "",
                     "placeholder": "",
-                    "maxlength": "",
+                    "maxlength": 230,
                     "rows": "",
                     "new_lines": ""
                 },
@@ -157,6 +192,6 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "show_in_rest": 0,
-    "modified": 1647745502
+    "show_in_rest": 1,
+    "modified": 1647792465
 }
