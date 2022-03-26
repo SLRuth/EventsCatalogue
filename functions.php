@@ -49,6 +49,14 @@ function load_entity_fields_scripts()
     }
 }
 
+function load_vue_script()
+{
+	wp_enqueue_script('vue_bundle', '/wp-content/themes/EventsCatalogue/dist/js/app.js', [], NULL, false);
+	wp_enqueue_script('vue_bundle_map', '/wp-content/themes/EventsCatalogue/dist/js/app.js.map', [], NULL, false);
+	wp_enqueue_script('vue_bundle_about', '/wp-content/themes/EventsCatalogue/dist/js/about.js', [], NULL, false);
+	wp_enqueue_script('vue_bundle_about_map', '/wp-content/themes/EventsCatalogue/dist/js/about.js.map', [], NULL, false);
+}
+
 function field_of_group()
 {
     $groupId = $_POST["group"];
@@ -67,6 +75,7 @@ function field_of_group()
     die(json_encode($fields));
 }
 
+add_action('wp_enqueue_scripts', 'load_vue_script');
 add_action('admin_enqueue_scripts', 'load_entity_fields_scripts');
 add_filter('acf/load_field/name=entities_to_import', 'load_entities_to_operate');
 add_filter('acf/load_field/name=entities_to_export', 'load_entities_to_operate');
