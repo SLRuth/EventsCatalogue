@@ -26,7 +26,7 @@
                     "label": "Entity Type",
                     "name": "entity_type",
                     "type": "select",
-                    "instructions": "Type of the entity to be exported",
+                    "instructions": "",
                     "required": true,
                     "conditional_logic": 0,
                     "wrapper": {
@@ -37,6 +37,7 @@
                     "choices": {
                         "group_622078e41348f": "Event",
                         "group_622084350e559": "Fee",
+                        "group_62368eea470ce": "Programme",
                         "group_6220818ed7a8f": "Speaker"
                     },
                     "default_value": false,
@@ -52,7 +53,7 @@
                     "label": "Local Field",
                     "name": "local_field",
                     "type": "select",
-                    "instructions": "Name of the field of the Entity Type",
+                    "instructions": "",
                     "required": 1,
                     "conditional_logic": 0,
                     "wrapper": {
@@ -63,9 +64,11 @@
                     "choices": {
                         "date": "Date",
                         "image": "Image",
+                        "image_url": "Image URL",
                         "type": "Type",
                         "title": "Title",
                         "description": "Description",
+                        "short_description": "Short Description",
                         "register_link": "Register Link"
                     },
                     "default_value": false,
@@ -81,7 +84,7 @@
                     "label": "Remote Field",
                     "name": "remote_field",
                     "type": "text",
-                    "instructions": "Field representing the local field on the Remote Host. Leave empty if local field is not going to be exported.",
+                    "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
@@ -102,7 +105,7 @@
             "label": "Importing Fields Mapping",
             "name": "importing_fields_mapping",
             "type": "repeater",
-            "instructions": "Optional table of mappings of the fields stored on the remote host to the fields of the entities, used specifically on import. If an entity's field does not appear here, the mappings set in the Fields Mapping will be used when importing.",
+            "instructions": "Optional table of mappings of the fields stored on the remote host to the fields of the entities, used specifically on import.",
             "required": 1,
             "conditional_logic": 0,
             "wrapper": {
@@ -132,6 +135,7 @@
                     "choices": {
                         "group_622078e41348f": "Event",
                         "group_622084350e559": "Fee",
+                        "group_62368eea470ce": "Programme",
                         "group_6220818ed7a8f": "Speaker"
                     },
                     "default_value": false,
@@ -158,9 +162,11 @@
                     "choices": {
                         "date": "Date",
                         "image": "Image",
+                        "image_url": "Image URL",
                         "type": "Type",
                         "title": "Title",
                         "description": "Description",
+                        "short_description": "Short Description",
                         "register_link": "Register Link"
                     },
                     "default_value": false,
@@ -226,5 +232,5 @@
     "active": true,
     "description": "Configures which entities to export \/ import and the fields to be exported \/ imported",
     "show_in_rest": 1,
-    "modified": 1647309705
+    "modified": 1647916102
 }

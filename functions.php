@@ -44,6 +44,7 @@ function load_entity_fields_scripts()
 {
     $screen = get_current_screen();
     if ($screen->id == "remote_host") {
+        wp_enqueue_script('remote_host_type_select', '/wp-content/themes/EventsCatalogue/js/remote_host_type_select.js', [], NULL, false);
         wp_enqueue_script('field_select', '/wp-content/themes/EventsCatalogue/js/field_script.js', [], NULL, false);
         wp_localize_script('field_select', 'backend', ['url' => admin_url('admin-ajax.php')]);
     }
@@ -67,10 +68,37 @@ function field_of_group()
     die(json_encode($fields));
 }
 
+function add_class_to_type_select($field) {
+    $field["class"] = "type-select";
+    return $field;
+}
+
+function add_class_to_shocklogic_configuration($field) {
+    $field["class"] = "shocklogic-configuration";
+    return $field;
+}
+
+function add_class_to_csv_configuration($field) {
+    $field["class"] = "csv-configuration";
+    return $field;
+}
+
+function value_of_post() {
+    $postId = $_POST["id"];
+    $groupId = $_POST["field"];
+    header('Content-Type: application/json');
+
+    $field = get_field($groupId, $postId);
+    die(json_encode($field));
+}
+
 add_action('admin_enqueue_scripts', 'load_entity_fields_scripts');
 add_filter('acf/load_field/name=entities_to_import', 'load_entities_to_operate');
 add_filter('acf/load_field/name=entities_to_export', 'load_entities_to_operate');
 add_filter('acf/load_field/name=entity_type', 'load_entity_types');
 add_filter('acf/load_field/name=local_field', 'load_local_field_types');
+add_filter('acf/load_field/name=type', 'add_class_to_type_select');
 add_action('wp_ajax_nopriv_field_of_group', 'field_of_group');
 add_action('wp_ajax_field_of_group', 'field_of_group');
+add_action('wp_ajax_nopriv_value_of_post', 'value_of_post');
+add_action('wp_ajax_value_of_post', 'value_of_post');

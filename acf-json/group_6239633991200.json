@@ -1,9 +1,9 @@
 {
-    "key": "group_6220818ed7a8f",
+    "key": "group_6239633991200",
     "title": "Speaker Specs",
     "fields": [
         {
-            "key": "field_6220819b26e7b",
+            "key": "field_6239633ea52bc",
             "label": "Specs",
             "name": "specs",
             "type": "group",
@@ -18,10 +18,10 @@
             "layout": "block",
             "sub_fields": [
                 {
-                    "key": "field_623692ac1c73c",
+                    "key": "field_6239634ca52bd",
                     "label": "Events",
                     "name": "events",
-                    "type": "repeater",
+                    "type": "post_object",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
@@ -30,38 +30,74 @@
                         "class": "",
                         "id": ""
                     },
-                    "collapsed": "",
-                    "min": 0,
-                    "max": 0,
-                    "layout": "table",
-                    "button_label": "",
-                    "sub_fields": [
-                        {
-                            "key": "field_623692d21c73d",
-                            "label": "event",
-                            "name": "event",
-                            "type": "post_object",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "post_type": [
-                                "event"
-                            ],
-                            "taxonomy": "",
-                            "allow_null": 0,
-                            "multiple": 0,
-                            "return_format": "object",
-                            "ui": 1
-                        }
-                    ]
+                    "post_type": [
+                        "event"
+                    ],
+                    "taxonomy": "",
+                    "allow_null": 0,
+                    "multiple": 1,
+                    "return_format": "object",
+                    "ui": 1
                 },
                 {
-                    "key": "field_622082ed26e7c",
+                    "key": "field_6239635ba52be",
+                    "label": "Name",
+                    "name": "name",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_62396361a52bf",
+                    "label": "Occupation",
+                    "name": "occupation",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_6239636d37774",
+                    "label": "Description",
+                    "name": "description",
+                    "type": "wysiwyg",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "tabs": "all",
+                    "toolbar": "full",
+                    "media_upload": 1,
+                    "delay": 0
+                },
+                {
+                    "key": "field_6239637337775",
                     "label": "Image",
                     "name": "image",
                     "type": "image",
@@ -85,9 +121,9 @@
                     "mime_types": ""
                 },
                 {
-                    "key": "field_6220830226e7d",
-                    "label": "Name",
-                    "name": "name",
+                    "key": "field_6239637d37776",
+                    "label": "Image URL",
+                    "name": "image_url",
                     "type": "text",
                     "instructions": "",
                     "required": 0,
@@ -102,44 +138,6 @@
                     "prepend": "",
                     "append": "",
                     "maxlength": ""
-                },
-                {
-                    "key": "field_6220831826e7e",
-                    "label": "Occupation",
-                    "name": "occupation",
-                    "type": "text",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "maxlength": ""
-                },
-                {
-                    "key": "field_622083a126e80",
-                    "label": "Description",
-                    "name": "description",
-                    "type": "wysiwyg",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "tabs": "all",
-                    "toolbar": "full",
-                    "media_upload": 1,
-                    "delay": 0
                 }
             ]
         }
@@ -161,6 +159,6 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "show_in_rest": 1,
-    "modified": 1647781905
+    "show_in_rest": 0,
+    "modified": 1647928440
 }

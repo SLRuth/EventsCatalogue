@@ -28,49 +28,11 @@
             "placeholder": ""
         },
         {
-            "key": "field_622ff472db442",
-            "label": "Hostname",
-            "name": "host",
-            "type": "text",
-            "instructions": "The Remote Host name. e.g www.google.com, 192.168.0.1.",
-            "required": 1,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
-            "key": "field_622ff356009b2",
-            "label": "Storage Name",
-            "name": "storage_name",
-            "type": "text",
-            "instructions": "Name representing where the entities will be stored, e.g. For an HTTP Remote Host, it represents the endpoint slug, For a Database Remote Host, it represents the database name",
-            "required": 1,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
-            "key": "field_622fe88607925",
-            "label": "Authentication",
-            "name": "authentication",
+            "key": "field_623896d3a9eaa",
+            "label": "Shocklogic Configuration",
+            "name": "shocklogic_configuration",
             "type": "group",
-            "instructions": "The authentication credentials used for accessing the Remote Host Endpoint, e.g. A Username and Password, or an API Token",
+            "instructions": "",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -81,11 +43,27 @@
             "layout": "block",
             "sub_fields": [
                 {
-                    "key": "field_622fee3407926",
-                    "label": "Username",
-                    "name": "username",
+                    "key": "field_6238976dfc55b",
+                    "label": "API URL",
+                    "name": "api_url",
+                    "type": "url",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_623896dfa9eab",
+                    "label": "API Token",
+                    "name": "api_token",
                     "type": "text",
-                    "instructions": "The username to use when authenticating with the Endpoint",
+                    "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
@@ -100,11 +78,11 @@
                     "maxlength": ""
                 },
                 {
-                    "key": "field_622fee4d07927",
-                    "label": "Password",
-                    "name": "password",
+                    "key": "field_623896f6a9eac",
+                    "label": "Project ID",
+                    "name": "project_id",
                     "type": "text",
-                    "instructions": "The password to use when authenticating with the endpoint. Leave blank when no password is needed",
+                    "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
@@ -117,13 +95,30 @@
                     "prepend": "",
                     "append": "",
                     "maxlength": ""
-                },
+                }
+            ]
+        },
+        {
+            "key": "field_62389784455b8",
+            "label": "CSV Configuration",
+            "name": "csv_configuration",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
                 {
-                    "key": "field_622fee7507928",
-                    "label": "Token",
-                    "name": "token",
+                    "key": "field_6238979f455b9",
+                    "label": "File Name",
+                    "name": "file_name",
                     "type": "text",
-                    "instructions": "The Token to use when authenticating with the Endpoint. Leave Username and Password empty when setting this option.",
+                    "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
@@ -173,5 +168,5 @@
     "active": true,
     "description": "The remote host where events will be exported and imported from",
     "show_in_rest": 1,
-    "modified": 1647728900
+    "modified": 1647876249
 }
