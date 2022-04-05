@@ -28,7 +28,7 @@
         },
         {
             "key": "field_623681fad6714",
-            "label": "Carousel events",
+            "label": "Carousel Events on Front Page",
             "name": "carousel_events",
             "type": "repeater",
             "instructions": "",
@@ -54,7 +54,7 @@
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
-                        "width": "",
+                        "width": "81",
                         "class": "",
                         "id": ""
                     },
@@ -66,6 +66,23 @@
                     "multiple": 0,
                     "return_format": "object",
                     "ui": 1
+                },
+                {
+                    "key": "field_6242c2e6cd37f",
+                    "label": "Background color",
+                    "name": "background_color",
+                    "type": "color_picker",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "#FF6E0B",
+                    "enable_opacity": 0,
+                    "return_format": "string"
                 }
             ]
         }
@@ -87,6 +104,6 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "show_in_rest": 0,
-    "modified": 1647744768
+    "show_in_rest": 1,
+    "modified": 1648946708
 }

@@ -7,7 +7,13 @@ if( function_exists('acf_add_options_page') ) {
 		'menu_title'	=> 'General Options',
 		'menu_slug' 	=> 'theme-general-Options',
 		'capability'	=> 'edit_posts',
-		'redirect'		=> false
+		'redirect'		=> false,
+	));
+
+	acf_add_options_sub_page(array(
+		'page_title' => 'Links Options',
+		'menu_title' => 'Links',
+		'parent_slug' => 'theme-general-Options',
 	));
 
 	acf_add_options_sub_page(array(
@@ -16,14 +22,6 @@ if( function_exists('acf_add_options_page') ) {
 		'parent_slug'	=> 'theme-general-Options',
 	));
 
-	/*
-	acf_add_options_sub_page(array(
-		'page_title' => 'Links Options',
-		'menu_title' => 'Links',
-		'parent_slug' => 'theme-general-Options',
-	));
-	 */
-	
 	acf_add_options_sub_page(array(
 		'page_title' 	=> 'Footer Options',
 		'menu_title'	=> 'Footer',
