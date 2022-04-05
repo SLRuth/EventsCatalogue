@@ -1,9 +1,9 @@
 {
-    "key": "group_62205b1b22ba8",
-    "title": "Footer Options",
+    "key": "group_6248edcfb051d",
+    "title": "Footer Options (copy)",
     "fields": [
         {
-            "key": "field_62205b53542c2",
+            "key": "field_6248edcfb93be",
             "label": "Features",
             "name": "",
             "type": "tab",
@@ -19,7 +19,7 @@
             "endpoint": 0
         },
         {
-            "key": "field_62205b9c542c3",
+            "key": "field_6248edcfb93f6",
             "label": "Footer Main Logo",
             "name": "footer_main_logo",
             "type": "image",
@@ -43,7 +43,7 @@
             "mime_types": ""
         },
         {
-            "key": "field_62205e834fecb",
+            "key": "field_6248edcfb942e",
             "label": "Column 1",
             "name": "",
             "type": "tab",
@@ -59,7 +59,7 @@
             "endpoint": 0
         },
         {
-            "key": "field_62205ec74fecc",
+            "key": "field_6248edcfb9490",
             "label": "Column 1 Title",
             "name": "column_1_title",
             "type": "text",
@@ -78,7 +78,7 @@
             "maxlength": ""
         },
         {
-            "key": "field_62205f2f4fecd",
+            "key": "field_6248edcfb9541",
             "label": "Column 1 List",
             "name": "column_1_list",
             "type": "repeater",
@@ -97,7 +97,7 @@
             "button_label": "",
             "sub_fields": [
                 {
-                    "key": "field_62205f924fece",
+                    "key": "field_6248edcfc3c76",
                     "label": "icon",
                     "name": "icon",
                     "type": "image",
@@ -121,7 +121,7 @@
                     "mime_types": ""
                 },
                 {
-                    "key": "field_62205fd84fecf",
+                    "key": "field_6248edcfc3cac",
                     "label": "text",
                     "name": "text",
                     "type": "text",
@@ -142,7 +142,7 @@
             ]
         },
         {
-            "key": "field_6220610a9659b",
+            "key": "field_6248edcfb957a",
             "label": "Column 2",
             "name": "",
             "type": "tab",
@@ -158,7 +158,7 @@
             "endpoint": 0
         },
         {
-            "key": "field_622061309659c",
+            "key": "field_6248edcfb95b1",
             "label": "Column 2 Title",
             "name": "column_2_title",
             "type": "text",
@@ -177,7 +177,7 @@
             "maxlength": ""
         },
         {
-            "key": "field_622061609659d",
+            "key": "field_6248edcfb95ea",
             "label": "Column 2 List",
             "name": "column_2_list",
             "type": "repeater",
@@ -196,7 +196,7 @@
             "button_label": "",
             "sub_fields": [
                 {
-                    "key": "field_622061b49659e",
+                    "key": "field_6248edcfcf27f",
                     "label": "icon",
                     "name": "icon",
                     "type": "image",
@@ -220,7 +220,7 @@
                     "mime_types": ""
                 },
                 {
-                    "key": "field_622061c19659f",
+                    "key": "field_6248edcfcf2b5",
                     "label": "link",
                     "name": "link",
                     "type": "link",
@@ -237,7 +237,7 @@
             ]
         },
         {
-            "key": "field_622061d6965a0",
+            "key": "field_6248edcfb9621",
             "label": "Column 3",
             "name": "",
             "type": "tab",
@@ -253,7 +253,7 @@
             "endpoint": 0
         },
         {
-            "key": "field_6220621a965a1",
+            "key": "field_6248edcfb9659",
             "label": "Column 3 Title",
             "name": "column_3_title",
             "type": "text",
@@ -272,7 +272,7 @@
             "maxlength": ""
         },
         {
-            "key": "field_62206559965a2",
+            "key": "field_6248edcfb9692",
             "label": "Column 3 Description",
             "name": "column_3_description",
             "type": "textarea",
@@ -309,5 +309,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 1,
-    "modified": 1648677235
+    "modified": 1648946639
 }
