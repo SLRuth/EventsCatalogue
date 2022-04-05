@@ -3,12 +3,37 @@
     "title": "Remote Host Configuration",
     "fields": [
         {
+            "key": "field_62441861baab1",
+            "label": "Schema",
+            "name": "schema",
+            "type": "select",
+            "instructions": "Choose what type of schema to use",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "default": "Shocklogic's Default Schema",
+                "custom": "Custom Schema"
+            },
+            "default_value": false,
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
             "key": "field_621f9ff4a0e8d",
             "label": "Export Fields Mapping",
             "name": "exporting_fields_mapping",
             "type": "repeater",
             "instructions": "Table of mappings of the field names of the entities to the field names stored in the remote host. Used in both export and import operations.",
-            "required": 1,
+            "required": 0,
             "conditional_logic": 0,
             "wrapper": {
                 "width": "",
@@ -38,7 +63,7 @@
                         "group_622078e41348f": "Event",
                         "group_622084350e559": "Fee",
                         "group_62368eea470ce": "Programme",
-                        "group_6220818ed7a8f": "Speaker"
+                        "group_6239633991200": "Speaker"
                     },
                     "default_value": false,
                     "allow_null": 0,
@@ -106,7 +131,7 @@
             "name": "importing_fields_mapping",
             "type": "repeater",
             "instructions": "Optional table of mappings of the fields stored on the remote host to the fields of the entities, used specifically on import.",
-            "required": 1,
+            "required": 0,
             "conditional_logic": 0,
             "wrapper": {
                 "width": "",
@@ -136,7 +161,7 @@
                         "group_622078e41348f": "Event",
                         "group_622084350e559": "Fee",
                         "group_62368eea470ce": "Programme",
-                        "group_6220818ed7a8f": "Speaker"
+                        "group_6239633991200": "Speaker"
                     },
                     "default_value": false,
                     "allow_null": 0,
@@ -232,5 +257,5 @@
     "active": true,
     "description": "Configures which entities to export \/ import and the fields to be exported \/ imported",
     "show_in_rest": 1,
-    "modified": 1647916102
+    "modified": 1648629930
 }
