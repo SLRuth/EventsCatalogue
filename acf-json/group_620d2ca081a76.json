@@ -15,12 +15,8 @@
                 "class": "",
                 "id": ""
             },
-            "choices": {
-                "Hybrid": "Hybrid",
-                "Virtual": "Virtual",
-                "Onsite": "Onsite"
-            },
-            "default_value": "Virtual",
+            "choices": [],
+            "default_value": false,
             "allow_null": 0,
             "multiple": 0,
             "ui": 0,
@@ -139,5 +135,5 @@
     "active": true,
     "description": "The events that are scheduled",
     "show_in_rest": 0,
-    "modified": 1648538522
+    "modified": 1649269793
 }

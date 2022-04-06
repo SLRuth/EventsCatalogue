@@ -28,6 +28,137 @@
             "placeholder": ""
         },
         {
+            "key": "field_62389784455b8",
+            "label": "CSV Configuration",
+            "name": "csv_configuration",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_6238979f455b9",
+                    "label": "File Name",
+                    "name": "file_name",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_624d2e4b0f070",
+                    "label": "Event ID Column",
+                    "name": "event_id_column",
+                    "type": "text",
+                    "instructions": "Name of the column representing the ID of the Event",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_624d2e5e0f071",
+                    "label": "Speaker ID Column",
+                    "name": "speaker_id_column",
+                    "type": "text",
+                    "instructions": "Column representing the ID of the Speaker",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_624d2e780f072",
+                    "label": "Speaker Event ID Column",
+                    "name": "speaker_event_id_column",
+                    "type": "text",
+                    "instructions": "Column representing the ID of the Event of which the Speaker is member",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_624d2ec90f073",
+                    "label": "Fee Event ID Column",
+                    "name": "fee_event_id_column",
+                    "type": "text",
+                    "instructions": "Column representing the ID of the Event on which the Fee is applied",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_624d2f810f074",
+                    "label": "Programme Event ID Column",
+                    "name": "programme_event_id_column",
+                    "type": "text",
+                    "instructions": "Column representing the ID of the Event on which the Programme is defined",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                }
+            ]
+        },
+        {
             "key": "field_623896d3a9eaa",
             "label": "Shocklogic Configuration",
             "name": "shocklogic_configuration",
@@ -97,42 +228,6 @@
                     "maxlength": ""
                 }
             ]
-        },
-        {
-            "key": "field_62389784455b8",
-            "label": "CSV Configuration",
-            "name": "csv_configuration",
-            "type": "group",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "layout": "block",
-            "sub_fields": [
-                {
-                    "key": "field_6238979f455b9",
-                    "label": "File Name",
-                    "name": "file_name",
-                    "type": "text",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "maxlength": ""
-                }
-            ]
         }
     ],
     "location": [
@@ -168,5 +263,5 @@
     "active": true,
     "description": "The remote host where events will be exported and imported from",
     "show_in_rest": 1,
-    "modified": 1648538523
+    "modified": 1649269887
 }

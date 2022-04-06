@@ -59,10 +59,10 @@
                     "button_label": "",
                     "sub_fields": [
                         {
-                            "key": "field_62368f02ad0db",
-                            "label": "Start Time",
-                            "name": "start_time",
-                            "type": "date_time_picker",
+                            "key": "field_624dd27da3dd0",
+                            "label": "Day",
+                            "name": "day",
+                            "type": "date_picker",
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": 0,
@@ -71,15 +71,31 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "display_format": "F j, Y g:i a",
-                            "return_format": "F j, Y g:i a",
+                            "display_format": "F j, Y",
+                            "return_format": "F j, Y",
                             "first_day": 1
+                        },
+                        {
+                            "key": "field_62368f02ad0db",
+                            "label": "Start Time",
+                            "name": "start_time",
+                            "type": "time_picker",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "display_format": "g:i a",
+                            "return_format": "g:i a"
                         },
                         {
                             "key": "field_62368f5aad0dc",
                             "label": "End Time",
                             "name": "end_time",
-                            "type": "date_time_picker",
+                            "type": "time_picker",
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": 0,
@@ -88,9 +104,8 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "display_format": "F j, Y g:i a",
-                            "return_format": "F j, Y g:i a",
-                            "first_day": 1
+                            "display_format": "g:i a",
+                            "return_format": "g:i a"
                         },
                         {
                             "key": "field_62368fd3ad0de",
@@ -153,5 +168,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1648538523
+    "modified": 1649269881
 }

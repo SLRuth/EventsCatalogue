@@ -59,5 +59,5 @@
     "active": true,
     "description": "Token that grants access to the Shocklogic API",
     "show_in_rest": 0,
-    "modified": 1648538522
+    "modified": 1649269840
 }

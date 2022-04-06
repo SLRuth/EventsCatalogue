@@ -1,12 +1,12 @@
 {
-    "key": "group_6239633991200",
-    "title": "Speaker Specs",
+    "key": "group_62206bf69cb02",
+    "title": "Header Front",
     "fields": [
         {
-            "key": "field_6239633ea52bc",
-            "label": "Specs",
-            "name": "specs",
-            "type": "group",
+            "key": "field_62206dcac979d",
+            "label": "Slides",
+            "name": "slides",
+            "type": "repeater",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -15,13 +15,17 @@
                 "class": "",
                 "id": ""
             },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
             "layout": "block",
+            "button_label": "",
             "sub_fields": [
                 {
-                    "key": "field_6239634ca52bd",
-                    "label": "Events",
-                    "name": "events",
-                    "type": "post_object",
+                    "key": "field_62206d8ac979a",
+                    "label": "Type",
+                    "name": "type",
+                    "type": "select",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
@@ -30,55 +34,21 @@
                         "class": "",
                         "id": ""
                     },
-                    "post_type": [
-                        "event"
-                    ],
-                    "taxonomy": "",
+                    "choices": {
+                        "virtual": "VIRTUAL",
+                        "hybrid": "HYBRID",
+                        "onsite": "ONSITE"
+                    },
+                    "default_value": false,
                     "allow_null": 0,
-                    "multiple": 1,
-                    "return_format": "object",
-                    "ui": 1
+                    "multiple": 0,
+                    "ui": 0,
+                    "return_format": "value",
+                    "ajax": 0,
+                    "placeholder": ""
                 },
                 {
-                    "key": "field_6239635ba52be",
-                    "label": "Name",
-                    "name": "name",
-                    "type": "text",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "maxlength": ""
-                },
-                {
-                    "key": "field_62396361a52bf",
-                    "label": "Occupation",
-                    "name": "occupation",
-                    "type": "text",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "maxlength": ""
-                },
-                {
-                    "key": "field_6239636d37774",
+                    "key": "field_62206db4c979c",
                     "label": "Description",
                     "name": "description",
                     "type": "wysiwyg",
@@ -97,9 +67,41 @@
                     "delay": 0
                 },
                 {
-                    "key": "field_6239637337775",
-                    "label": "Image",
-                    "name": "image",
+                    "key": "field_62206e21c979e",
+                    "label": "Learn More",
+                    "name": "learn_more",
+                    "type": "link",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array"
+                },
+                {
+                    "key": "field_62206edcc97a0",
+                    "label": "Background Color",
+                    "name": "background_color",
+                    "type": "color_picker",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "#FF6E0B",
+                    "enable_opacity": 0,
+                    "return_format": "string"
+                },
+                {
+                    "key": "field_62206ecbc979f",
+                    "label": "Background Image",
+                    "name": "background_image",
                     "type": "image",
                     "instructions": "",
                     "required": 0,
@@ -119,25 +121,6 @@
                     "max_height": "",
                     "max_size": "",
                     "mime_types": ""
-                },
-                {
-                    "key": "field_6239637d37776",
-                    "label": "Image URL",
-                    "name": "image_url",
-                    "type": "text",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "maxlength": ""
                 }
             ]
         }
@@ -147,7 +130,7 @@
             {
                 "param": "post_type",
                 "operator": "==",
-                "value": "speaker"
+                "value": "post"
             }
         ]
     ],
@@ -160,5 +143,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1649269890
+    "modified": 1649269870
 }
