@@ -42,11 +42,12 @@ function load_local_field_types($field)
 
 function load_entity_fields_scripts()
 {
+    $url = get_template_directory_uri();
     $screen = get_current_screen();
     if ($screen->id == "remote_host") {
-        wp_enqueue_script('remote_host_configuration_select', '/wp-content/themes/EventsCatalogue/js/remote_host_configuration_select.js', [], NULL, false);
-        wp_enqueue_script('remote_host_type_select', '/wp-content/themes/EventsCatalogue/js/remote_host_type_select.js', [], NULL, false);
-        wp_enqueue_script('field_select', '/wp-content/themes/EventsCatalogue/js/field_script.js', [], NULL, false);
+        wp_enqueue_script('remote_host_configuration_select', $url . '/js/remote_host_configuration_select.js', [], NULL, false);
+        wp_enqueue_script('remote_host_type_select', $url . '/js/remote_host_type_select.js', [], NULL, false);
+        wp_enqueue_script('field_select', $url . '/js/field_script.js', [], NULL, false);
         wp_localize_script('field_select', 'backend', ['url' => admin_url('admin-ajax.php')]);
     }
 }

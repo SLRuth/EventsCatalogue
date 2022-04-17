@@ -1,13 +1,13 @@
 {
     "key": "group_6232113045eb9",
-    "title": "Shocklogic API Configuration",
+    "title": "Shocklogic Authentication",
     "fields": [
         {
             "key": "field_6232113a7d777",
             "label": "API Token",
             "name": "api_token",
             "type": "text",
-            "instructions": "Token given by Shocklogic",
+            "instructions": "Token given by Shocklogic used to authenticate participants",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -59,5 +59,5 @@
     "active": true,
     "description": "Token that grants access to the Shocklogic API",
     "show_in_rest": 0,
-    "modified": 1649269840
+    "modified": 1650167776
 }

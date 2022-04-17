@@ -28,6 +28,58 @@
             "placeholder": ""
         },
         {
+            "key": "field_625a53a7cc11c",
+            "label": "Entities to Export",
+            "name": "exporting_entities",
+            "type": "checkbox",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "event": "Events",
+                "fee": "Fees",
+                "programme": "Programme",
+                "speaker": "Speakers"
+            },
+            "allow_custom": 0,
+            "default_value": [],
+            "layout": "vertical",
+            "toggle": 0,
+            "return_format": "value",
+            "save_custom": 0
+        },
+        {
+            "key": "field_625a53e3ac307",
+            "label": "Entities to Import",
+            "name": "importing_entities",
+            "type": "checkbox",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "event": "Events",
+                "fee": "Fees",
+                "programme": "Programme",
+                "speaker": "Speakers"
+            },
+            "allow_custom": 0,
+            "default_value": [],
+            "layout": "vertical",
+            "toggle": 0,
+            "return_format": "value",
+            "save_custom": 0
+        },
+        {
             "key": "field_621f9ff4a0e8d",
             "label": "Export Fields Mapping",
             "name": "exporting_fields_mapping",
@@ -257,5 +309,5 @@
     "active": true,
     "description": "Configures which entities to export \/ import and the fields to be exported \/ imported",
     "show_in_rest": 1,
-    "modified": 1649269884
+    "modified": 1650087254
 }

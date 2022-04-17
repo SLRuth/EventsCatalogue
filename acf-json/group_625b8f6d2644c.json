@@ -1,23 +1,27 @@
 {
-    "key": "group_62205757bde60",
-    "title": "General Options",
+    "key": "group_625b8f6d2644c",
+    "title": "Export History",
     "fields": [
         {
-            "key": "field_6244cf6877561",
-            "label": "Contrast Main Color",
-            "name": "contrast_main_color",
-            "type": "color_picker",
+            "key": "field_625b8f828a420",
+            "label": "Max Export Entries",
+            "name": "max_export_entries",
+            "type": "number",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "50",
+                "width": "",
                 "class": "",
                 "id": ""
             },
-            "default_value": "#FFFFFF",
-            "enable_opacity": 0,
-            "return_format": "string"
+            "default_value": 100,
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "min": "",
+            "max": "",
+            "step": ""
         }
     ],
     "location": [
@@ -37,6 +41,6 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "show_in_rest": 1,
-    "modified": 1650087305
+    "show_in_rest": 0,
+    "modified": 1650167721
 }
